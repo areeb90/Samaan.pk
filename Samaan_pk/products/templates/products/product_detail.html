@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ product.name }} - Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .product-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .product-image {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .product-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .product-details {
+        flex: 2;
+        padding: 20px;
+      }
+
+      .product-details h1 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .product-details p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+        color: #666;
+      }
+
+      .product-details .price {
+        font-size: 24px;
+        color: #4caf50;
+        margin-bottom: 20px;
+      }
+
+      .buy-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .buy-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-container">
+      <div class="product-image">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" />
+      </div>
+      <div class="product-details">
+        <h1>{{ product.name }}</h1>
+        <p>{{ product.description }}</p>
+        <p class="price">${{ product.price }}</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+  </body>
+</html>

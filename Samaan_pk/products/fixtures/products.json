@@ -1,0 +1,274 @@
+[
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "Electronics",
+            "parent": null
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "Fashion",
+            "parent": null
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "Home & Garden",
+            "parent": null
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name": "Books",
+            "parent": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "name": "Smartphone",
+            "description": "Latest model smartphone with advanced features.",
+            "price": 699.99,
+            "stock": 50,
+            "image": "products/smartphone.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "name": "Laptop",
+            "description": "High-performance laptop for gaming and work.",
+            "price": 1199.99,
+            "stock": 30,
+            "image": "products/laptop.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "category": 2,
+            "name": "Leather Jacket",
+            "description": "Stylish leather jacket for all seasons.",
+            "price": 199.99,
+            "stock": 20,
+            "image": "products/leather_jacket.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "category": 2,
+            "name": "Running Shoes",
+            "description": "Comfortable running shoes with excellent grip.",
+            "price": 89.99,
+            "stock": 40,
+            "image": "products/running_shoes.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,
+        "fields": {
+            "category": 3,
+            "name": "Garden Hose",
+            "description": "Durable garden hose for watering plants.",
+            "price": 29.99,
+            "stock": 15,
+            "image": "products/garden_hose.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 6,
+        "fields": {
+            "category": 3,
+            "name": "Outdoor Furniture Set",
+            "description": "Comfortable outdoor furniture for your garden.",
+            "price": 499.99,
+            "stock": 10,
+            "image": "products/outdoor_furniture.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 7,
+        "fields": {
+            "category": 4,
+            "name": "Cookbook",
+            "description": "A collection of delicious recipes for home cooking.",
+            "price": 19.99,
+            "stock": 60,
+            "image": "products/cookbook.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 8,
+        "fields": {
+            "category": 4,
+            "name": "Science Fiction Novel",
+            "description": "An exciting science fiction novel by a renowned author.",
+            "price": 14.99,
+            "stock": 25,
+            "image": "products/scifi_novel.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 9,
+        "fields": {
+            "category": 1,
+            "name": "Bluetooth Headphones",
+            "description": "Noise-canceling Bluetooth headphones with long battery life.",
+            "price": 149.99,
+            "stock": 45,
+            "image": "products/bluetooth_headphones.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 10,
+        "fields": {
+            "category": 1,
+            "name": "Smartwatch",
+            "description": "Smartwatch with fitness tracking and notifications.",
+            "price": 199.99,
+            "stock": 25,
+            "image": "products/smartwatch.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 11,
+        "fields": {
+            "category": 2,
+            "name": "Sunglasses",
+            "description": "Fashionable sunglasses with UV protection.",
+            "price": 89.99,
+            "stock": 35,
+            "image": "products/sunglasses.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 12,
+        "fields": {
+            "category": 2,
+            "name": "Winter Coat",
+            "description": "Warm winter coat for cold weather.",
+            "price": 249.99,
+            "stock": 20,
+            "image": "products/winter_coat.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 13,
+        "fields": {
+            "category": 3,
+            "name": "BBQ Grill",
+            "description": "High-quality BBQ grill for outdoor cooking.",
+            "price": 349.99,
+            "stock": 8,
+            "image": "products/bbq_grill.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 14,
+        "fields": {
+            "category": 3,
+            "name": "Patio Heater",
+            "description": "Patio heater for keeping warm during chilly evenings.",
+            "price": 129.99,
+            "stock": 12,
+            "image": "products/patio_heater.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 15,
+        "fields": {
+            "category": 4,
+            "name": "Historical Biography",
+            "description": "An engaging biography of a historical figure.",
+            "price": 24.99,
+            "stock": 30,
+            "image": "products/historical_biography.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 16,
+        "fields": {
+            "category": 4,
+            "name": "Travel Guide",
+            "description": "Comprehensive guide for traveling to popular destinations.",
+            "price": 22.99,
+            "stock": 40,
+            "image": "products/travel_guide.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 17,
+        "fields": {
+            "category": 1,
+            "name": "4K TV",
+            "description": "High-definition 4K TV with smart features.",
+            "price": 799.99,
+            "stock": 15,
+            "image": "products/4k_tv.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 18,
+        "fields": {
+            "category": 2,
+            "name": "Summer Dress",
+            "description": "Light and airy summer dress for warm weather.",
+            "price": 49.99,
+            "stock": 30,
+            "image": "products/summer_dress.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 19,
+        "fields": {
+            "category": 3,
+            "name": "Outdoor Rug",
+            "description": "Durable rug designed for outdoor use.",
+            "price": 79.99,
+            "stock": 18,
+            "image": "products/outdoor_rug.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 20,
+        "fields": {
+            "category": 4,
+            "name": "Cookware Set",
+            "description": "Complete cookware set for all your cooking needs.",
+            "price": 199.99,
+            "stock": 22,
+            "image": "products/cookware_set.jpg"
+        }
+    }
+]

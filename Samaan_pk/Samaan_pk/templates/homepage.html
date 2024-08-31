@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samaan_pk - Welcome</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 1rem;
+        text-align: center;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      @media (max-width: 600px) {
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Samaan_pk</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'product_list' %}">Products</a></li>
+          <li><a href="{% url 'cart:cart_detail' %}">Cart</a></li>
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>Your one-stop shop for everything from electronics to fashion!</p>
+    </main>
+    <footer>
+      <p>&copy; 2024 Samaan_pk. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

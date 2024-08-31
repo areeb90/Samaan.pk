@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+        color: #4caf50;
+        padding: 1rem;
+      }
+      .cart-detail {
+        background: white;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+      }
+      .cart-detail ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .cart-detail ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .cart-detail p {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      @media (max-width: 600px) {
+        .cart-detail {
+          padding: 15px;
+        }
+        .cart-detail p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cart-detail">
+      <h1>Your Cart</h1>
+      <ul>
+        {% for item in cart.items.all %}
+        <li>
+          {{ item.product.name }} x {{ item.quantity }} - ${{ item.total_price
+          }}
+        </li>
+        {% endfor %}
+      </ul>
+      <p>Total: ${{ cart.total_price }}</p>
+    </div>
+  </body>
+</html>
