@@ -80,6 +80,12 @@
         <p>{{ product.description }}</p>
         <p class="price">${{ product.price }}</p>
         <a href="#" class="buy-button">Buy Now</a>
+
+        <form action="{% url 'cart:add_to_cart' product.id %}" method="POST">
+          {% csrf_token %}
+          <br />
+          <button class="buy-button" type="submit">Add to Cart</button>
+        </form>
       </div>
     </div>
   </body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+  </head>
+  <body>
+    <h1>Your Cart</h1>
+    <ul>
+      {% for item in cart_items %}
+      <li>
+        {{ item.product.name }} - ${{ item.product.price }} x {{ item.quantity
+        }} = ${{ item.get_total_price }}
+        <form
+          action="{% url 'update_cart' item.id %}"
+          method="POST"
+          style="display: inline"
+        >
+          {% csrf_token %}
+          <input
+            type="number"
+            name="quantity"
+            value="{{ item.quantity }}"
+            min="1"
+          />
+          <button type="submit">Update</button>
+        </form>
+        <a href="{% url 'remove_from_cart' item.id %}">Remove</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <h3>Total: ${{ total_price }}</h3>
+    <a href="{% url 'product_list' %}">Continue Shopping</a>
+  </body>
+</html>
